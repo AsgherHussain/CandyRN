@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-month-picker/src/MonthPicker/index.js b/node_modules/react-native-month-picker/src/MonthPicker/index.js
+index d051a84..44db97e 100644
+--- a/node_modules/react-native-month-picker/src/MonthPicker/index.js
++++ b/node_modules/react-native-month-picker/src/MonthPicker/index.js
+@@ -176,7 +176,7 @@ class MonthPicker extends React.PureComponent {
+             ? (
+               this.props.nextIcon
+             ) : (
+-              <Text style={selectedYear >= maxYear && this.props.yearDisabledStyle}>
++              <Text style={selectedYear >= maxYear ? this.props.yearDisabledStyle : {color:'#000'}}>
+                 {this.props.nextText}
+               </Text>
+             )}

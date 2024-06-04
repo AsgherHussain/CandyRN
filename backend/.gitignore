@@ -1,0 +1,10 @@
+*.pyc
+env/
+.terraform
+.env
+staticfiles/
+postgres-data/
+users/photos
+products/images
+orders/invoices
+orders/videos
